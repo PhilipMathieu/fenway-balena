@@ -1,21 +1,5 @@
 version: '2'
 services:
-  frontend:
-    build: ./frontend
-    expose:
-      - "80"
-  proxy:
-    build: ./haproxy
-    depends_on:
-      - frontend
-      - data
-    ports:
-      - "80:80"
-  data:
-    privileged: true
-    build: ./data
-    expose:
-      - "5000"
   browser:
     image: bhcr.io/balenablocks/browser-armv7hf # where <arch> is one of aarch64, arm32 or amd64
     privileged: true # required for UDEV to find plugged in peripherals such as a USB mouse
@@ -27,4 +11,4 @@ services:
     privileged: true
     build: ./ledmatrix
     expose:
-      - "8080"
+      - "80"
