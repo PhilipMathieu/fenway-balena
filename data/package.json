@@ -21,6 +21,6 @@
     "express": "^4.16.3",
     "socket.io": "^2.1.0",
     "i2c-bus": "^5.2.2",
-    "8x8matrix": "https://github.com/PhilipMathieu/Adafruit-8x8-Matrix-with-NodeJS.git"
+    "8x8matrix": "PhilipMathieu/Adafruit-8x8-Matrix-with-NodeJS"
   }
 }
