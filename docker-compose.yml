@@ -23,3 +23,8 @@ services:
     ports:
         - '5011' # management API (optional)
         - '35173' # Chromium debugging port (optional)
+  ledmatrix:
+    privileged: true
+    build: ./ledmatrix
+    expose:
+      - "8080"
