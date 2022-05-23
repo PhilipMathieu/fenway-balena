@@ -1,1 +1,4 @@
 
+[submodule "ledmatrix"]
+	path = ledmatrix
+	url = https://github.com/PhilipMathieu/ledmatrix.git
